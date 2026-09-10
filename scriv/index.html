@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Scriv 개인정보처리방침</title>
+  <meta name="description" content="Scriv Camera Android 앱 개인정보처리방침" />
+  <style>
+    :root { color-scheme: dark; --bg:#080d16; --panel:#0b1220; --text:#f8fafc; --muted:#a8b6c8; --line:#223047; --accent:#38bdf8; --good:#7dd3a8; }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); }
+    body { margin:0; min-height:100vh; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif; color:var(--text); background:radial-gradient(circle at 12% 0%,rgba(56,189,248,.12),transparent 34rem),var(--bg); line-height:1.72; }
+    main { width:min(900px,calc(100% - 32px)); margin:0 auto; padding:56px 0 80px; }
+    header { margin-bottom:28px; padding-bottom:24px; border-bottom:1px solid var(--line); }
+    .eyebrow { margin:0 0 10px; color:var(--accent); font-size:12px; font-weight:800; letter-spacing:.18em; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(30px,6vw,44px); line-height:1.15; letter-spacing:-.03em; }
+    .lead { max-width:780px; margin:14px 0 0; color:var(--muted); font-size:16px; }
+    .summary { margin:26px 0; padding:18px 20px; border:1px solid rgba(56,189,248,.28); border-radius:14px; background:rgba(56,189,248,.07); }
+    .summary strong { color:#d9f3ff; }
+    section { margin-top:18px; padding:22px 24px; border:1px solid var(--line); border-radius:16px; background:rgba(11,18,32,.92); }
+    h2 { margin:0 0 12px; font-size:18px; }
+    p { margin:10px 0; }
+    ul { margin:10px 0 0; padding-left:22px; }
+    li + li { margin-top:7px; }
+    .muted { color:var(--muted); }
+    .good { color:var(--good); font-weight:700; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    code { padding:2px 6px; border:1px solid var(--line); border-radius:6px; background:#172033; color:#d8e7fb; font-size:.92em; }
+    footer { margin-top:28px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    @media (max-width:640px) { main { padding-top:34px; } section { padding:18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Scriv · Privacy Policy</p>
+      <h1>개인정보처리방침</h1>
+      <p class="lead">Scriv Camera는 모니터·노트북 화면의 코드, 로그, 문서 같은 텍스트를 촬영해 기기에 저장하고 사용자가 원할 때 공유하는 Android 카메라 앱입니다.</p>
+      <p class="muted">패키지 이름: <code>me.jeongdo.scrivcamera</code></p>
+      <p class="muted">최종 업데이트: 2026-09-10</p>
+    </header>
+
+    <div class="summary">
+      <strong>핵심 원칙:</strong> Scriv는 촬영 이미지를 개발자 서버로 전송하지 않습니다. 계정·로그인·앱 전용 클라우드가 없으며 핵심 촬영 기능은 오프라인으로 동작합니다. 외부 앱으로 이미지를 전달하는 동작은 사용자가 Share를 명시적으로 실행했을 때만 시작됩니다.
+    </div>
+
+    <section>
+      <h2>1. 권한</h2>
+      <p>Scriv는 핵심 촬영을 위해 Android의 <strong>카메라 권한</strong>을 사용합니다.</p>
+      <ul>
+        <li>카메라 — 미리보기와 JPEG 촬영에 사용합니다.</li>
+        <li>위치 — 요청하지 않습니다.</li>
+        <li>마이크 — 요청하지 않습니다.</li>
+        <li>연락처·계정 — 요청하지 않습니다.</li>
+        <li>네트워크 — 현재 앱은 인터넷 권한을 요구하지 않습니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. 촬영 이미지와 저장</h2>
+      <p>촬영한 JPEG는 Android MediaStore를 통해 기기의 공유 사진 영역 <code>Pictures/Scriv</code>에 저장됩니다.</p>
+      <p class="good">촬영 이미지 자체를 Scriv 개발자가 운영하는 서버로 자동 업로드하거나 수집하지 않습니다.</p>
+      <p>저장된 사진은 갤러리나 Android 미디어 관리 기능을 통해 사용자가 직접 확인하거나 삭제할 수 있습니다. 앱을 삭제해도 공유 미디어 영역에 저장된 사진은 Android의 미디어 보관 정책에 따라 남아 있을 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>3. 공유와 외부 앱</h2>
+      <p>Scriv의 Share 기능은 사용자가 명시적으로 실행했을 때 Android Sharesheet를 엽니다. 사용자가 선택한 외부 앱에는 해당 촬영 이미지의 읽기 가능한 content URI가 전달될 수 있습니다.</p>
+      <p>이미지가 외부 앱으로 전달된 이후의 보관·전송·처리는 선택한 앱 또는 서비스의 개인정보처리방침을 따릅니다. Scriv는 공유 대상을 자동으로 선택하거나 백그라운드에서 자동 공유하지 않습니다.</p>
+    </section>
+
+    <section>
+      <h2>4. 앱 설정과 진단 정보</h2>
+      <ul>
+        <li>마지막 카메라 모드와 그리드, 화면 꺼짐 방지, 햅틱, 볼륨키 셔터, 타이머 같은 설정은 기기 내부 DataStore에 저장될 수 있습니다.</li>
+        <li>Info 화면은 camera id, focal length, 지원 범위, 노출값, 화면 밝기 통계, preview/capture 지연 같은 기기 진단값을 표시할 수 있습니다.</li>
+        <li><code>COPY INFO</code>는 사용자가 직접 누를 때 이 진단 텍스트를 Android 클립보드에 복사합니다.</li>
+      </ul>
+      <p class="muted">Scriv의 COPY INFO 진단에는 촬영 이미지 내용이나 위치 데이터가 포함되지 않도록 설계되어 있습니다. Android 클립보드에 복사된 이후의 접근·보관은 기기와 사용 중인 다른 앱의 정책 영향을 받을 수 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>5. 서버, 계정, 광고 및 분석</h2>
+      <p>현재 Scriv는 개발자가 운영하는 사용자 계정 시스템, 이미지 저장 서버, 앱 전용 클라우드 백업, 광고 SDK 또는 사용자 행동 분석 SDK를 사용하지 않습니다.</p>
+      <p>향후 실제 앱 동작이나 사용 SDK가 바뀌어 데이터 처리 범위가 달라지는 경우 이 개인정보처리방침도 함께 갱신합니다.</p>
+    </section>
+
+    <section>
+      <h2>6. Android 시스템 백업</h2>
+      <p>기기와 Google 계정의 Android 백업 설정에 따라 앱 내부의 일부 설정이 시스템 백업 또는 기기 이전 기능에 포함될 수 있습니다. 이 처리는 Android/Google 플랫폼 기능에 의해 수행되며 Scriv 개발자가 별도 백업 서버를 운영하는 방식이 아닙니다.</p>
+    </section>
+
+    <section>
+      <h2>7. 데이터 삭제</h2>
+      <ul>
+        <li>촬영 사진 — 사용자가 갤러리 또는 Android 미디어 관리 기능에서 삭제할 수 있습니다.</li>
+        <li>앱 내부 설정 — Android의 앱 데이터 삭제 또는 앱 제거로 삭제할 수 있습니다. 시스템 백업 설정에 따라 재설치·기기 이전 시 일부 설정이 복원될 수 있습니다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. 문의</h2>
+      <p>Scriv의 개인정보 처리에 관한 문의:</p>
+      <p><a href="mailto:me.jeongdo@gmail.com">me.jeongdo@gmail.com</a></p>
+    </section>
+
+    <footer>Scriv Camera · Package <code>me.jeongdo.scrivcamera</code></footer>
+  </main>
+</body>
+</html>
